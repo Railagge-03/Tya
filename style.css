@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive;
+  background: linear-gradient(135deg, #f9a7b0, #fbc3bc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container, .final-container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.6);
+  text-align: center;
+  max-width: 400px;
+}
+
+h1 {
+  color: #ff4d6d;
+}
+
+.message, .message2, .message3 {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.message2 {
+  color: #7a004e;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.message3 {
+  color: #6a1b9a;
+  margin-top: 15px;
+}
+
+#cheerButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff69b4;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+#cheerButton:hover {
+  background-color: #ff85c1;
+}
+
+#extraMessage {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #d6336c;
+}
+
+.heart {
+  position: absolute;
+  color: #ff4d6d;
+  animation: float 4s linear infinite;
+  z-index: -1;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-800px) scale(1.5);
+    opacity: 0;
+  }
+}
